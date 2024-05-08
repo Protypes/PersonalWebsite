@@ -1,4 +1,7 @@
 .dark-mode {
+    .header-cont {
+        background: var(--gray-dark-default);
+    }
     .section {
         &-title {
             background: var(--gray-dark-200);

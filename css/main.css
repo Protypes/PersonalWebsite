@@ -385,12 +385,23 @@ body {
 
 header {
   max-width: 1440px;
-  margin-inline: auto;
+  margin: 0 auto;
   padding-top: 16px;
+  padding-bottom: 16px;
   background: var(--gray---default);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-cont {
+  background: var(--gray---default);
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  position: fixed;
 }
 
 .logo {
@@ -1005,6 +1016,9 @@ footer {
   .feedback__list {
     padding-inline: 24px;
   }
+}
+.dark-mode .header-cont {
+  background: var(--gray-dark-default);
 }
 .dark-mode .section-title {
   background: var(--gray-dark-200);
