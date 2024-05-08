@@ -1,0 +1,263 @@
+.dark-mode {
+    .section {
+        &-title {
+            background: var(--gray-dark-200);
+            color: var(--gray-dark-600);
+        }
+        &-subtitle {
+            color: var(--gray-dark-600);
+        }
+    }
+    .mobile-menu {
+        svg {
+            path {
+                stroke: var(--gray-dark-600);
+            }
+        }
+    }
+    .container {
+        background: var(--gray-dark-default);
+    }
+    header {
+        background: var(--gray-dark-default);
+    }
+    .logo {
+        color: var(--gray-dark-900);
+    }
+    .links {
+        ul {
+            li {
+               color: var(--gray-dark-600); 
+            }
+        }
+        &__buttons {
+            &__downloadcv {
+                background: var(--gray-dark-900);
+                color: var(--gray-dark-50);
+            }
+        }
+    }
+
+    .hero {
+        background: var(--gray-dark-default);
+        &__text {
+            h1 {
+                color: var(--gray-dark-900);
+            }
+            p {
+                color: var(--gray-dark-600);
+            }
+            h5 {
+                color: var(--gray-dark-600);
+            }
+            &__location {
+                svg {
+                    path {
+                        stroke: var(--gray-dark-600);
+                    }
+                }
+            }
+            &__links {
+                li {
+                    svg {
+                        path {
+                            stroke: var(--gray-dark-600);
+                        }
+                    }
+                }
+            }
+        }
+        &__image {
+            img {
+                border: 8px solid var(--gray-dark-default);
+            }
+        }
+    }
+
+    .about-me {
+        background: var(--gray-dark-50);
+        &__content {
+            &__text {
+                h2 {
+                    color: var(--gray-dark-900);
+                }
+                p {
+                    color: var(--gray-dark-600);
+                }
+            }
+            &__image {
+                img {
+                    border: 8px solid var(--gray-dark-50);
+                }
+            }
+        }
+    }
+
+    .skills {
+        background: var(--gray-dark-default);
+        &__list {
+            &__item {
+                p {
+                    color: var(--gray-dark-600);
+                }
+            }
+        }
+    }
+
+    .expirience {
+        background: var(--gray-dark-50);
+        &__list {
+            &__item {
+                box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+                background: var(--gray-dark-100);
+                &__text {
+                    h1 {
+                        color: var(--gray-dark-900);
+                    }
+                    ul {
+                        li {
+                            color: var(--gray-dark-600);
+                        }
+                    }
+                }
+                &__date {
+                    color: var(--gray-dark-700);
+                }
+            }
+        }
+    }
+
+    .work {
+        &__list {
+            &__item {
+                box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+                background: var(--gray-dark-100);
+                img {
+                    background: var(--gray-dark-200);
+                    border-right: 1px solid var(--gray-dark-100);
+                }
+                &__text {
+                    h1 {
+                        color: var(--gray-dark-900);
+                    }
+                    p {
+                        color: var(--gray-dark-600);
+                    } 
+                    &__techstack {
+                        p {
+                            background: var(--gray-dark-200);
+                            color: var(--gray-dark-600);
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    img {
+                        border-left: 1px solid var(--gray-dark-100);
+                    }
+                }
+            }
+        }
+    }
+    .feedback {
+        background: var(--gray-dark-50);
+        &__list {
+            &__item {
+                box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+                background: var(--gray-dark-100);
+                p {
+                    color: var(--gray-dark-600);
+                }
+                h2 {
+                    color: var(--gray-dark-900);
+                }
+                h3 {
+                    color: var(--gray-dark-600);
+                }
+            }
+        }
+    }
+    .contact {
+        h1 {
+            color: var(--gray-dark-900);
+        }
+        p {
+            color: var(--gray-dark-600);
+        }
+        ul {
+            li {
+                svg {
+                    path {
+                        stroke: var(--gray-dark-600);
+                    }
+                }
+            }
+        }
+
+    }
+
+    footer {
+        background: var(--gray-dark-50);
+    }
+    .footer__content {
+        color: var(--gray-dark-600);
+    }
+    .mobile-menu.open {
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+        background: var(--gray-dark-default);
+    }
+    .mobile-menu {
+        border-bottom: 1px solid var(--gray-dark-100);
+        background: var(--gray-dark-default);
+        &__header {
+            &__logo {
+                color: var(--gray-dark-900);
+            }
+        }
+        &__btn {
+            svg {
+                path {
+                    stroke: var(--gray-dark-600);
+                }
+            }
+        }
+        &__links {
+            li {
+                a {
+                    color: var(--gray-dark-600);
+                }
+            }
+        }
+        &__theme {
+            p {
+                color: var(--gray-dark-600);
+            }
+        }
+        &__cv {
+            background: var(--gray-dark-900);
+            color: var(--gray-dark-50);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .hero__image {
+        img {
+            box-shadow:none;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) { 
+    .dark-mode {
+        .hero__image {
+            img {
+                box-shadow: 45px 27px var(--gray-dark-200);
+            }
+        }
+        .about-me__content__image {
+            img {
+                box-shadow: -30px 27px var(--gray-dark-200);
+            }
+        }
+    }
+}

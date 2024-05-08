@@ -1,0 +1,20 @@
+footer {
+    background: var(--gray-50);
+}
+
+.footer__content {
+    padding: 24px 0;
+    display: flex;
+    max-width: 1440px;
+    margin-inline: auto;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--gray-600);
+    justify-content: center;
+    a {
+        color: inherit;
+    }
+}

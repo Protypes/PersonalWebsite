@@ -1,0 +1,115 @@
+@media screen and (max-width: 1000px) {
+
+    .links {
+        display: none;
+    }
+
+    .hero {
+        &__content {
+            flex-direction: column-reverse;
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__image {
+            width: 100%;
+            justify-content: center;
+            display: flex; 
+            img {
+                box-shadow: none;
+                max-width: 290px;
+            }
+        }
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    header {
+        padding-inline: 16px;
+    }
+
+    .about-me {
+        padding-top: 64px;
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            &__image {
+                display: flex;
+                width: auto;
+                img {
+                    box-shadow: none;
+                    max-width: 290px;
+                }
+            }
+            &__text {
+                width: 100%;
+            }
+        }
+    }
+
+    .skills {
+        padding-top: 64px;
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .work {
+        padding-top: 64px;
+        &__list {
+            padding-inline: 48px;
+            &__item:nth-child(2) {
+                flex-direction: column;
+                img {
+                    width: auto;
+                    border-radius: 12px 12px 0 0;
+                    padding: 16px;
+                }
+            }
+            &__item {
+                flex-direction: column;
+                &__text {
+                    width: auto;
+                    &__techstack {
+
+                    }
+                }
+                img {
+                    width: auto;
+                    border-radius: 12px 12px 0 0;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+
+    .expirience {
+        padding-top: 64px;
+        &__list {
+            &__item {
+                display: flex;
+                gap: 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                img {
+                    width: 160px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .feedback {
+        padding-top: 64px;
+        &__list {
+            flex-direction: column;
+        }
+    }
+
+    .contact {
+        padding-top: 64px;
+    }
+}

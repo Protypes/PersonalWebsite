@@ -1,0 +1,36 @@
+.contact {
+    padding: 96px 0;
+    padding-inline: 16px;
+
+    &__content {
+        max-width: 1440px;
+        margin-inline: auto;
+        text-align: center;
+        h1 {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 111%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: var(--gray-900);
+            margin: 0 0 16px 0;
+
+        }
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--gray-600);
+            margin: 0;
+        }
+        ul {
+            justify-content: center;
+            list-style: none;
+            display: flex;
+            gap: 4px;
+            padding: 0;
+        }
+    }
+}

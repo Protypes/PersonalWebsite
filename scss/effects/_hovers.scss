@@ -1,0 +1,35 @@
+.links {
+    .links__buttons__switchmode {
+        &:hover {
+            border-bottom: 1px solid #000000;
+        }
+    }
+    ul {
+        li {
+            a {
+                &:hover {
+                    border-bottom: 1px solid #000000;
+                }
+            }
+        }
+    }
+}
+
+.dark-mode {
+    .links__buttons__switchmode {
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+    .links {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

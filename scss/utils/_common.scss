@@ -1,0 +1,26 @@
+.section-title {
+    border-radius: 12px;
+    padding: 4px 20px;
+    display: table;
+    height: 24px;
+    background: var(--gray-200);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--gray-600);
+    align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.section-subtitle {
+    padding-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--gray-600);
+    padding-bottom: 48px;
+}

@@ -1,0 +1,28 @@
+.skills {
+    padding: 96px 0 96px 0;
+    max-width: 1440px;
+    padding-inline: 16px;
+    margin-inline: auto;
+    background: var(--gray---default);
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        &__item {
+            text-align: center;
+            img {
+                height: 64px;
+                width: 64px;
+                object-fit: contain;
+            }
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 156%;
+                color: var(--gray-600);
+                
+            }
+        }
+    }
+}

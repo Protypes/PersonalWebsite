@@ -1,0 +1,83 @@
+.work {
+    padding: 96px 0 96px 0;
+    &__content {
+        max-width: 1440px;
+        margin-inline: auto;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        justify-content: center;
+        &__item {
+            display: flex;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.06), 0 4px 3px 0 rgba(0, 0, 0, 0.07);
+            background: var(--gray---default);
+            border-radius: 12px;
+            img {
+                width: 50%;
+                padding: 48px;
+                background: var(--gray-50);
+                border-right: 1px solid var(--gray-100);
+                border-radius: 12px 0 0 12px;
+                object-fit: contain;
+            }
+            &__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 24px;
+                width: 50%;
+                padding: 48px;
+                border-radius: 12px 0 0 12px;
+                h1 {
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: var(--gray-900);
+                    margin: 0;
+                }
+                p {
+                    max-width: 480px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: var(--gray-600);
+                    margin: 0;
+                }
+                &__techstack {
+                    display: flex;
+                    gap: 8px;
+                    max-width: 480px;
+                    flex-wrap: wrap;
+                    p {
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 12px;
+                        padding: 4px 20px;
+                        height: 28px;
+                        background: var(--gray-200);
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: var(--gray-600);
+                    }
+                }
+                &__link {
+
+                }
+            }
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                img {
+                    border-left: 1px solid var(--gray-100);
+                    border-radius: 0 12px 12px 0;
+                }
+            }
+        }
+    }
+}
