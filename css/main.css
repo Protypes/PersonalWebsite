@@ -1017,6 +1017,9 @@ footer {
     padding-inline: 24px;
   }
 }
+.dark-mode {
+  background: var(--gray-dark-default);
+}
 .dark-mode .header-cont {
   background: var(--gray-dark-default);
 }
